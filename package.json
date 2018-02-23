@@ -1,0 +1,31 @@
+{
+  "name": "ms-nfc-4",
+  "version": "0.0.1",
+  "description": "Research for nfc client endpoints",
+  "homepage": "https://github.com/ctrees/ms-nfc-4",
+  "scripts": {
+    "docs": "cd docs && make html && cd ..",
+    "test": "echo test_NOT_Setup",
+    "wip": "echo wip_NOT_Setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctrees/ms-nfc-4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ctrees/ms-nfc-4/issues"
+  },
+  "keywords": [
+    "research",
+    "ms-nfc-4"
+  ],
+  "author": "Chris Trees <ctrees@mailserviceslc.com>",
+  "contributors": [
+    "Chris Trees <christrees@yahoo.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
