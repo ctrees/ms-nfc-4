@@ -1,0 +1,13 @@
+---
+
+- src: https://github.com/bertvv/ansible-role-rh-base
+  version: develop
+
+- src: https://github.com/geerlingguy/ansible-role-pip
+  version: develop
+
+- src: https://github.com/geerlingguy/ansible-role-java
+  version: develop
+
+- src: https://github.com/bertvv/ansible-role-mariadb
+  version: develop

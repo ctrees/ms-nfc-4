@@ -14,6 +14,7 @@ Guide Index
    Research-Summary
    Research-PWA
    Research-Notes
+   Build-Documents
 
 Indices and tables
 ------------------
