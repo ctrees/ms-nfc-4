@@ -34,8 +34,6 @@
 - name: docbuild
   box: bento/centos-7.4
   synced_folders:
-    - src: test
-      dest: /tmp/test
     - src: www
       dest: /var/www/html
       options:

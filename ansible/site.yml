@@ -43,11 +43,11 @@
         password: '$6$eB9rKOzpGYfu0MJJ$58qVMQMltf9WBbTlqDnCZ77fyS371zqsFGJGN3pQ0hbJ7CWHVePy5XkHGFCFXJ2LmezufqrPRvMTKS6g5vgFi1'
         #-HINT: WhatTimeIsIt
         #-crypt-sha512 https://www.mkpasswd.net/index.php
-      - name: confluence
-        comment: 'confluence server user'
-        groups:
-          - confluence
-        password: '$6$IljJlWObzDELhyrz$7kK//l0EXs/pt4OUFPKGisgJkbLHPVfw4gxlOqqVHhu.wxYDnfETAhDBBW5pkQiGrNxQ6xKnkKNt4rb85gsCY1'
+#      - name: confluence
+#        comment: 'confluence server user'
+#        groups:
+#          - confluence
+#        password: '$6$IljJlWObzDELhyrz$7kK//l0EXs/pt4OUFPKGisgJkbLHPVfw4gxlOqqVHhu.wxYDnfETAhDBBW5pkQiGrNxQ6xKnkKNt4rb85gsCY1'
         #-HINT: defaultmsops
         #-crypt-sha512 https://www.mkpasswd.net/index.php
     rhbase_selinux_booleans: [httpd_enable_homedirs]
@@ -64,11 +64,12 @@
 #    httpd_virtualSite: 'msansible.rtd'
 #    httpd_users_public_html: ['msops', 'cat']
     # Load the pip documentation packages we use
+    pip_package: python-pip
     pip_install_packages:
       - requests
       - Sphinx
-      - sphinxcontrib-confluencebuilder
-      - docker
+#x- sphinxcontrib-confluencebuilder
+#x- docker
     # Database for 
 #    mariadb_databases:
 #      - name: confluence
@@ -95,9 +96,9 @@
     - bertvv.rh-base
     - bertvv.httpd
     - geerlingguy.pip
-#    - geerlingguy.docker
-#    - bertvv.mariadb
-#    - ctrees.confluence
+#x- geerlingguy.docker
+#x- bertvv.mariadb
+#x- ctrees.confluence
   tasks:
     - name: Enable public_html for users
       template:
